@@ -3,7 +3,7 @@ const educations = [
       id: 1,
       title: "Information Technology",
       duration: "2023 - Present",
-      institution: "National University of Battambang. Major in Information Technology",
+      institution: "National University of Battambang.",
     },
     {
         id: 2,
