@@ -25,7 +25,7 @@ function About() {
           {/* Bio */}
           <SpotlightCard
             className="h-full border border-gray-700/50 rounded-xl bg-gray-800/30 backdrop-blur-sm hover:border-yellow-400/30 transition-all duration-300"
-            spotlightColor="rgba(190, 90, 19, 0.1)"
+            spotlightColor="rgba(245, 40, 145, 0.8)"
           >
             <div className="p-2 h-full flex flex-col">
               <div className="flex items-center gap-3 mb-4">
@@ -54,7 +54,7 @@ function About() {
           {/* Skills */}
           <SpotlightCard
             className="h-full border border-gray-700/50 rounded-xl bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm hover:border-indigo-400/50 transition-all duration-500 overflow-hidden group"
-            spotlightColor="rgba(139, 92, 246, 0.15)"
+            spotlightColor="rgba(46, 201, 202, 0.72)"
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 

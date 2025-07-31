@@ -3,6 +3,7 @@ import Navbar from './layout/Navabar' // Note: Component name should match the f
 import About from './pages/About'// You'll need to create this component
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Hero from './pages/Hero'
+import Blog from './pages/Blog'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <>
             <Hero />
             <About />
+            <Blog />
           </>
         } />
       </Routes>

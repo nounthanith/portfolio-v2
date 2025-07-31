@@ -26,7 +26,7 @@ const getIcon = (icon) => {
 
 function Education() {
   return (
-    <section id="education" className="w-full py-20 overflow-hidden">
+    <section id="education" className="w-full mt-10 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">

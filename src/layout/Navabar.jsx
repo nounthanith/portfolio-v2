@@ -13,7 +13,8 @@ function Navbar() {
   const navItems = [
     { name: "Home", path: "#hero", isInternal: true },
     { name: "About", path: "#about", isInternal: true },
-    { name: "Contact", path: "/contact", isInternal: false },
+    // { name: "Contact", path: "/contact", isInternal: false },
+    { name: "Blog", path: "#blog", isInternal: true },
   ];
 
   const toggleMobileMenu = () => {
