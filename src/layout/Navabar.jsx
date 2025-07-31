@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ShinyText from "../ui/ShinyText";
+import ScrambledText from "../ui/ScrambleText";
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,6 +14,7 @@ function Navbar() {
   const navItems = [
     { name: "Home", path: "#hero", isInternal: true },
     { name: "About", path: "#about", isInternal: true },
+
     { name: "Blog", path: "#blog", isInternal: true },
     { name: "Contact", path: "#contact", isInternal: true },
   ];
@@ -68,12 +70,15 @@ function Navbar() {
                   onClick={() => handleInternalLink(item.path)}
                   className="px-3 py-2 text-sm font-medium hover:text-indigo-300 transition-colors duration-300"
                 >
-                  <ShinyText
-                    text={item.name}
-                    disabled={false}
-                    speed={2}
-                    className="text-lg hover:text-indigo-300 transition-colors duration-300 hover:underline"
-                  />
+                 <ScrambledText
+                 radius={100}
+                 duration={1.2}
+                 speed={0.5}
+                 scrambleChars=".:"
+                 className="text-xl text-white/70 hover:text-indigo-300 transition-colors duration-300 hover:underline"
+                 >
+                 {item.name}
+                 </ScrambledText>
                 </button>
               ) : (
                 <Link
@@ -85,7 +90,7 @@ function Navbar() {
                     text={item.name}
                     disabled={false}
                     speed={2}
-                    className="text-lg hover:text-indigo-300 transition-colors duration-300 hover:underline"
+                    className="text-lg text-white/70 hover:text-indigo-300 transition-colors duration-300 hover:underline"
                   />
                 </Link>
               )

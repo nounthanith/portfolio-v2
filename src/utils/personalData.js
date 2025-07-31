@@ -6,10 +6,10 @@ const personalData = {
   phone: "093 939 290",
   email: "nuonthanith@gmail.com",
   github: "https://github.com/nounthanith",
-  facebook: "https://www.facebook.com/nuonthanith",
-  instagram: "https://www.instagram.com/nuonthanith",
-  telegram: "https://t.me/nuonthanith",
-  twitter: "https://twitter.com/nuonthanith",
+  facebook: "https://web.facebook.com/tha.nith.549",
+  instagram: "https://www.instagram.com/tonq_tong/",
+  telegram: "https://t.me/Nuon_Thanith",
+  twitter: "https://x.com/T94287Nuon",
   avatar: avatar,
 };
 
