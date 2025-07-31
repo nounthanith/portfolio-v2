@@ -78,7 +78,7 @@ function About() {
 
                 {/* Main container */}
                 <div className="relative p-1 rounded-xl bg-gray-900/80 backdrop-blur-md border border-gray-700/60 group-hover:border-indigo-400/40 transition-all duration-500 shadow-md hover:shadow-indigo-500/20">
-                  <div className="p-6 rounded-xl bg-gray-800/40 backdrop-blur-sm border border-gray-700/40">
+                  <div className="py-4 px-2 rounded-xl bg-gray-800/40 backdrop-blur-sm border border-gray-700/40">
                     {/* Skills Section */}
                     <div className="mb-8">
                       <h3 className="text-sm font-semibold text-gray-400 mb-3 ml-1 tracking-wide uppercase">

@@ -112,8 +112,8 @@ function Education() {
                 </div>
 
                 {/* Timeline Dot (Desktop Only) */}
-                <div className="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-indigo-500/10 border-2 border-indigo-500/30 mx-4">
-                  <div className="w-3 h-3 rounded-full bg-indigo-400 animate-ping" />
+                <div className="hidden md:flex items-center justify-center w-5 h-5 rounded-full bg-indigo-500/10 border-2 border-red-500/30 mx-4">
+                  <div className="w-1 h-1 rounded-full bg-red-600 animate-ping" />
                 </div>
 
                 {/* Spacer for symmetry */}

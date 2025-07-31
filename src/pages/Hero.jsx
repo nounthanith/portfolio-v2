@@ -100,7 +100,7 @@ function Hero() {
                   radius={40}
                   duration={1.5}
                   speed={0.15}
-                  scrambleChars=".:"
+                  scrambleChars="101"
                 >
                   <a href={`tel:${phone}`} className="hover:underline">
                     {phone}
@@ -113,7 +113,7 @@ function Hero() {
                   radius={40}
                   duration={1.5}
                   speed={0.15}
-                  scrambleChars=".:"
+                  scrambleChars="@$"
                 >
                   <a href={`mailto:${email}`} className="hover:underline">
                     {email}
