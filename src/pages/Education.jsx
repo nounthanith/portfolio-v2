@@ -81,19 +81,17 @@ function Education() {
                       </div>
 
                       {/* Title */}
-                      <h3 className="text-xl font-bold text-white mb-2">
-                        {edu.title}
-                      </h3> 
+                      <div>
+                      <ShinyText className="text-xl font-bold font-mono py-2" text={edu.title} disabled={false} speed={4} />
+                      </div>
 
                       {/* Institution */}
-                      <p className="text-indigo-300 font-medium mb-3">
+                      <p className="text-indigo-300 font-medium font-mono">
                         {edu.institution}
                       </p>
 
                       {/* Description */}
-                      <p className="text-gray-300 text-sm mb-4">
-                        {edu.description}
-                      </p>
+                      
 
                       {/* Details List */}
                       <ul className="space-y-2 mt-3">

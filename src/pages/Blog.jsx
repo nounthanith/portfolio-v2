@@ -7,8 +7,8 @@ import { Fa500Px, FaGithub, FaLaptop, FaLink } from "react-icons/fa";
 
 function Blog() {
   return (
-    <section id="blog" className="w-full relative overflow-hidden mb-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="blog" className="w-full relative overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold">
             <ShinyText text="Blog" disabled={false} speed={2} />
@@ -38,7 +38,7 @@ function Blog() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-white border border-gray-600 px-3 py-1 rounded-md hover:opacity-80 flex items-center gap-1"
+                  className="text-sm text-white border border-gray-600 px-3 py-1 rounded-md hover:opacity-80 flex items-center gap-1 hover:bg-gray-700"
                 >
                   Live Demo
                   <FaLink />
@@ -66,7 +66,7 @@ function Blog() {
                       speed={2}
                     />
                   ))}
-                </div>
+                </div> 
               </div>
             </SpotlightCard>
           ))}

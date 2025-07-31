@@ -4,6 +4,8 @@ import About from './pages/About'// You'll need to create this component
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Hero from './pages/Hero'
 import Blog from './pages/Blog'
+import Contact from './pages/Contact'
+import Footer from './layout/Footer'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Hero />
             <About />
             <Blog />
+            <Contact />
+            <Footer />
           </>
         } />
       </Routes>
