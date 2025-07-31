@@ -30,7 +30,7 @@ function Blog() {
                 alt={item.name}
                 className="w-full h-40 object-cover rounded-md mb-4 group-hover:scale-105 transition-transform duration-300"
               />
-              <h3 className="text-xl font-bold text-white mb-2">{item.name}</h3>
+              <ShinyText className="text-xl font-bold mb-2" text={item.name} disabled={false} speed={2} />
               <p className="text-gray-300 text-sm mb-4">{item.description}</p>
 
               <div className="flex justify-start items-center gap-1 mb-4">
@@ -54,15 +54,17 @@ function Blog() {
                 </a>
               </div>
 
+              <p className="text-gray-300 text-sm mb-4">Technologies:</p>
               <div className="flex justify-start items-center gap-1 mb-4">
                 <div className="flex flex-wrap items-center gap-1">
                   {item.technologies.map((tech, index) => (
-                    <span
+                    <ShinyText
                       key={index}
-                      className="text-sm text-white border border-gray-600 px-2 py-1 rounded-md hover:bg-gray-700"
-                    >
-                      {tech}
-                    </span>
+                      className="text-sm  border border-gray-600 px-2 py-1 rounded-md hover:bg-gray-700"
+                      text={tech}
+                      disabled={false}
+                      speed={2}
+                    />
                   ))}
                 </div>
               </div>
