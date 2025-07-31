@@ -14,6 +14,7 @@ import {
 import ShinyText from "../ui/ShinyText";
 import DecryptedText from "../ui/DecryptedText";
 import ScrambledText from "../ui/ScrambleText";
+import CircularText from "../ui/CircularText";
 
 function Hero() {
   const {
@@ -39,17 +40,20 @@ function Hero() {
   ];
 
   const handleScrollDown = () => {
-    const aboutSection = document.getElementById('about');
+    const aboutSection = document.getElementById("about");
     if (aboutSection) {
       aboutSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
 
   return (
-    <section id="hero" className="relative w-full min-h-screen flex items-center justify-center py-20">
+    <section
+      id="hero"
+      className="relative w-full min-h-screen flex items-center justify-center py-20"
+    >
       <div className="absolute ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Text Content */}
@@ -138,12 +142,21 @@ function Hero() {
           {/* Right: Avatar */}
           <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative group">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-yellow-300 to-yellow-500 blur-lg opacity-20 group-hover:opacity-30 transition-all duration-500" />
+              <div className="absolute inset-0 rounded-full blur-lg opacity-20 group-hover:opacity-30 transition-all duration-500" />
+
               <img
                 src={avatar}
                 alt={name}
-                className="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-yellow-400/30 shadow-xl transform group-hover:scale-105 transition-all duration-500"
+                className="w-64 h-64 rounded-full object-cover border-4 border-yellow-400/30 shadow-xl transform group-hover:scale-105 transition-all duration-500"
               />
+
+              <CircularText
+                text="NUON*THANITH*PORTFOLIO*"
+                spinDuration={20}
+                onHover="speedUp"
+                className="absolute inset-0 "
+              />
+
               <div className="absolute inset-0 rounded-full border-4 border-transparent group-hover:border-yellow-300/50 transition-all duration-500" />
             </div>
           </div>
@@ -152,7 +165,7 @@ function Hero() {
 
       {/* Scroll Down Button */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-        <button 
+        <button
           onClick={handleScrollDown}
           className="group flex items-center justify-center p-2 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-bounce"
           aria-label="Scroll to about section"

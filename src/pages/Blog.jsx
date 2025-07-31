@@ -23,7 +23,7 @@ function Blog() {
             <SpotlightCard
               key={index}
               className="group relative border border-gray-700/40 rounded-xl bg-gray-800/40 backdrop-blur-md p-2 hover:shadow-lg transition-all duration-300"
-              spotlightColor="rgba(24, 0, 0, 0.57)"
+              spotlightColor="rgba(17, 223, 10, 0.8)"
             >
               <img
                 src={item.image}
