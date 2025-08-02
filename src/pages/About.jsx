@@ -60,7 +60,7 @@ function About() {
               <div className="flex items-center gap-3 mb-8 group-hover:translate-x-1 transition-transform duration-300">
                 <div className="relative">
                   <FaStar className="text-indigo-400 text-xl relative z-10" />
-                  <div className="absolute inset-0 bg-indigo-400 rounded-full blur-md opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
+                  {/* <div className="absolute inset-0 bg-indigo-400 rounded-full blur-md opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div> */}
                 </div>
                 <ShinyText
                   text="My Skills"
@@ -75,29 +75,44 @@ function About() {
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/20 via-purple-500/10 to-pink-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
 
                 {/* Main container */}
-                <div className="relative p-1 rounded-xl bg-gray-900/80 backdrop-blur-md border border-gray-700/60 group-hover:border-indigo-400/40 transition-all duration-500 shadow-md hover:shadow-indigo-500/20">
-                  <div className="py-4 px-2 rounded-xl bg-gray-800/40 backdrop-blur-sm border border-gray-700/40">
+                <div className="relative p-1 rounded-xl backdrop-blur-md border border-gray-700/60 group-hover:border-indigo-400/40 transition-all duration-500 shadow-md hover:shadow-indigo-500/20">
+                  <div className="py-4 px-2 rounded-xl  backdrop-blur-sm border border-gray-700/40">
                     {/* Skills Section */}
-                    <div className="mb-8">
-                      <h3 className="text-sm font-semibold text-gray-400 mb-3 ml-1 tracking-wide uppercase">
-                        Skills
+                    <div className="">
+                      <h3 className="text-sm font-semibold text-gray-400 mb-3 ml-1 tracking-wide uppercase z-0">
+                        Tools
                       </h3>
                       <Marquee
                         autoFill
                         speed={22}
-                        pauseOnHover
-                        gradientColor="rgb(17 24 39)"
+                        pauseOnHover={true}
+                        gradient={false}
+                        direction="left"
                       >
-                        <div className="flex gap-3 px-2">
+                        <div className="flex gap-4 px-2 py-1 overflow-visible">
                           {aboutData.skills?.map((skill, index) => (
                             <div
                               key={index}
-                              className="relative px-4 py-2.5 rounded-md bg-gray-700/60 hover:bg-indigo-500/20 transition duration-300 border border-gray-600 hover:border-indigo-400/40 group/skill"
+                              className="group/tool relative flex flex-col items-center"
                             >
-                              <span className="text-sm font-medium text-gray-200 group-hover/skill:text-white transition-colors duration-300">
-                                {skill}
+                              {/* Tooltip above */}
+                              <span className="absolute bottom-1 mb-2 left-1/2 transform -translate-x-1/2 px-3 py-1.5 bg-black text-white text-xs font-medium rounded-md whitespace-nowrap opacity-0 group-hover/tool:opacity-100 transition-all duration-300 shadow-lg z-100">
+                                { skill.name}
+                                {/* Tooltip arrow */}
+                                <div className="absolute -bottom-1 left-1/2 w-2 h-2 bg-black transform -translate-x-1/2 rotate-45" />
                               </span>
-                              <div className="absolute bottom-0 left-1/2 w-2 h-0.5 bg-indigo-400 rounded-full opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300 transform -translate-x-1/2" />
+
+                              {/* Icon container */}
+                              <div className="z-10 relative p-2.5 rounded-xl bg-gray-800/60 hover:bg-gradient-to-br from-purple-500/10 to-indigo-500/10 transition-all duration-300 border border-gray-700/60 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                                <img
+                                  className="w-auto h-8 transition-transform duration-300 group-hover/tool:scale-110"
+                                  src={skill.image}
+                                  alt={skill.name}
+                                />
+                              </div>
+
+                              {/* Glow dot below icon */}
+                              <div className="mt-1.5 w-1 h-1 bg-purple-400 rounded-full opacity-0 group-hover/tool:opacity-100 transition-opacity duration-300" />
                             </div>
                           ))}
                         </div>
