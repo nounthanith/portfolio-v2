@@ -10,8 +10,6 @@ import Education from "./Education";
 function About() {
   return (
     <section id="about" className="w-full py-20 relative overflow-hidden">
-    
-
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="flex justify-center mb-16">
@@ -107,27 +105,41 @@ function About() {
                     </div>
 
                     {/* Tools Section */}
-                    <div>
-                      <h3 className="text-sm font-semibold text-gray-400 mb-3 ml-1 tracking-wide uppercase">
+                    <div className="">
+                      <h3 className="text-sm font-semibold text-gray-400 mb-3 ml-1 tracking-wide uppercase z-0">
                         Tools
                       </h3>
                       <Marquee
                         autoFill
                         speed={22}
-                        pauseOnHover
-                        gradientColor="rgb(17 24 39)"
+                        pauseOnHover={true}
+                        gradient={false}
                         direction="right"
                       >
-                        <div className="flex gap-3 px-2">
+                        <div className="flex gap-4 px-2 py-1 overflow-visible">
                           {aboutData.tool?.map((tool, index) => (
                             <div
                               key={index}
-                              className="relative px-4 py-2.5 rounded-md bg-gray-700/60 hover:bg-purple-500/20 transition duration-300 border border-gray-600 hover:border-purple-400/40 group/tool"
+                              className="group/tool relative flex flex-col items-center"
                             >
-                              <span className="text-sm font-medium text-gray-200 group-hover/tool:text-white transition-colors duration-300">
-                                {tool}
+                              {/* Tooltip above */}
+                              <span className="absolute bottom-1 mb-2 left-1/2 transform -translate-x-1/2 px-3 py-1.5 bg-black text-white text-xs font-medium rounded-md whitespace-nowrap opacity-0 group-hover/tool:opacity-100 transition-all duration-300 shadow-lg z-100">
+                                {tool.name}
+                                {/* Tooltip arrow */}
+                                <div className="absolute -bottom-1 left-1/2 w-2 h-2 bg-black transform -translate-x-1/2 rotate-45" />
                               </span>
-                              <div className="absolute bottom-0 left-1/2 w-2 h-0.5 bg-purple-400 rounded-full opacity-0 group-hover/tool:opacity-100 transition-opacity duration-300 transform -translate-x-1/2" />
+
+                              {/* Icon container */}
+                              <div className="z-10 relative p-2.5 rounded-xl bg-gray-800/60 hover:bg-gradient-to-br from-purple-500/10 to-indigo-500/10 transition-all duration-300 border border-gray-700/60 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                                <img
+                                  className="w-8 h-8 transition-transform duration-300 group-hover/tool:scale-110"
+                                  src={tool.image}
+                                  alt={tool.name}
+                                />
+                              </div>
+
+                              {/* Glow dot below icon */}
+                              <div className="mt-1.5 w-1 h-1 bg-purple-400 rounded-full opacity-0 group-hover/tool:opacity-100 transition-opacity duration-300" />
                             </div>
                           ))}
                         </div>
@@ -142,8 +154,6 @@ function About() {
                   <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-indigo-400/40 rounded-br-lg opacity-0 group-hover:opacity-100 transition duration-500 delay-100" />
                 </div>
               </div>
-
-              
             </div>
           </SpotlightCard>
         </div>
