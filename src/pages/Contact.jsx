@@ -22,11 +22,12 @@ function Contact() {
   const API_URL =
     "https://script.google.com/macros/s/AKfycbxAiS4s8EoIA1WRxHKTdyQMiJyXds81vt7K3xH-cmnXEQTPVC0ecSS0CLCniwrUDCc-/exec";
 
+  const date = new Date().toLocaleString();
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
-    timestamp: new Date().toISOString(),
+    timestamp: date,
     action: "insert",
     id: Math.floor(Math.random() * 1000 + 1),
   });
@@ -66,7 +67,7 @@ function Contact() {
 
     const params = new URLSearchParams({
       ...form,
-      timestamp: new Date().toISOString(),
+      timestamp: date,
       action: "insert",
       id: Math.floor(Math.random() * 1000 + 1),
     });
