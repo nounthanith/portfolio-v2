@@ -80,7 +80,7 @@ function About() {
                     {/* Skills Section */}
                     <div className="">
                       <h3 className="text-sm font-semibold text-gray-400 mb-3 ml-1 tracking-wide uppercase z-0">
-                        Tools
+                        Skills
                       </h3>
                       <Marquee
                         autoFill
