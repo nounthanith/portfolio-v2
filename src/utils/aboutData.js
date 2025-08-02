@@ -1,6 +1,6 @@
 const aboutData = {
-  skills: ["HTML", "CSS", "JavaScript", "Node.js", "React", "Tailwind CSS", "Mongo", "C++", "Java", "Laravel", "MySQL",],
-  tool:["VS Code", "Git", "GitHub", "Postman", "Docker"],
+  skills: ["HTML", "CSS", "JavaScript", "Node.js", "React", "Tailwind CSS", "Mongo", "C++", "Java", "Laravel", "MySQL", "Dart", "Flutter", "Laravel", "Sanctum", "Sqlite", "Getx",],
+  tool:["VS Code", "Git", "GitHub", "Postman", "Docker", "IntelliJ", "Android Studio"],
   experience: [
     {
       role: "Frontend Developer",
