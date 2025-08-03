@@ -6,6 +6,7 @@ import SpotlightCard from "../ui/SpotlightCard";
 import { FaCode, FaStar } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import Education from "./Education";
+import SkillExperience from "../components/SkillExperience";
 
 function About() {
   return (
@@ -173,7 +174,7 @@ function About() {
           </SpotlightCard>
         </div>
       </div>
-      <Education />
+      <SkillExperience />   
     </section>
   );
 }
