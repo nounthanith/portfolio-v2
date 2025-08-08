@@ -86,10 +86,11 @@ function Hero() {
               <div className="flex items-center justify-center lg:justify-start">
                 <FaMapMarkerAlt className="mr-3 text-yellow-400 text-xl" />
                 <ScrambledText
+                  className="cursor-grab"
                   radius={40}
                   duration={1.5}
                   speed={0.15}
-                  scrambleChars=".:"
+                  scrambleChars="__"
                 >
                   {address}
                 </ScrambledText>
@@ -97,12 +98,13 @@ function Hero() {
               <div className="flex items-center justify-center lg:justify-start">
                 <FaPhone className="mr-3 text-yellow-400 text-xl" />
                 <ScrambledText
+                  className="cursor-grab"
                   radius={40}
                   duration={1.5}
                   speed={0.15}
-                  scrambleChars="101"
+                  scrambleChars="__"
                 >
-                  <a href={`tel:${phone}`} className="hover:underline">
+                  <a href={`tel:${phone}`} className="hover:underline cursor-grab">
                     {phone}
                   </a>
                 </ScrambledText>
@@ -110,6 +112,7 @@ function Hero() {
               <div className="flex items-center justify-center lg:justify-start">
                 <FaEnvelope className="mr-3 text-yellow-400 text-xl" />
                 <ScrambledText
+                  className="cursor-grab"
                   radius={40}
                   duration={1.5}
                   speed={0.15}

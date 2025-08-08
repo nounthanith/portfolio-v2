@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ShinyText from "../ui/ShinyText";
 import { skillExperience, categories } from "../utils/skillExperience";
 import GlareHover from "../ui/GlareHover";
@@ -6,6 +6,23 @@ import GlareHover from "../ui/GlareHover";
 const SkillExperience = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [showAll, setShowAll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  
+  // Check if mobile on component mount and window resize
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768); // 768px is typically the breakpoint for md in Tailwind
+    };
+    
+    // Initial check
+    checkIfMobile();
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', checkIfMobile);
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
   
   // Filter skills based on selected category
   const filteredSkills = selectedCategory === "all" 
@@ -15,8 +32,9 @@ const SkillExperience = () => {
   // Sort skills by experience (highest first)
   const sortedSkills = [...filteredSkills].sort((a, b) => b.experience - a.experience);
   
-  // Get skills to display (first 6 or all)
-  const displayedSkills = showAll ? sortedSkills : sortedSkills.slice(0, 6);
+  // Get skills to display (first 3 on mobile, 6 on desktop, or all if showAll is true)
+  const itemsToShow = isMobile ? 4 : 6;
+  const displayedSkills = showAll ? sortedSkills : sortedSkills.slice(0, itemsToShow);
   
   // Format category name for display
   const formatCategoryName = (category) => {
@@ -84,7 +102,7 @@ const SkillExperience = () => {
 
                 <div className="w-full bg-gray-700/30 rounded-full h-2.5 mb-2 overflow-hidden">
                   <div
-                    className="h-full rounded-full bg-gradient-to-r from-black/50 to-white/50 transition-all duration-1000 ease-out"
+                    className="h-full rounded-full bg-gradient-to-r from-white/20 to-white/60 transition-all duration-1000 ease-out"
                     style={{
                       width: `${skill.experience}%`,
                       transitionDelay: `${index * 50}ms`,

@@ -99,7 +99,16 @@ const skillExperience = [
         experience: 80,
         category: "tools"
     },
-   
+    {
+        name: "TypeScript",
+        experience: 80,
+        category: "frontend"
+    },
+    {
+        name: "React Native",
+        experience: 75,
+        category: "frontend"
+    },
 ];
 
 // Get all unique categories

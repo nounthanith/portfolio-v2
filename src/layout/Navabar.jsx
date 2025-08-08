@@ -75,7 +75,7 @@ function Navbar() {
                  duration={1.2}
                  speed={0.5}
                  scrambleChars=".:"
-                 className="text-xl text-white/70 hover:text-indigo-300 transition-colors duration-300 hover:underline"
+                 className="text-xl text-white/70 hover:text-indigo-300 transition-colors duration-300 hover:underline cursor-grab"
                  >
                  {item.name}
                  </ScrambledText>

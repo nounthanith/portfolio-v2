@@ -38,11 +38,11 @@ function About() {
               </div>
               <div className="text-base md:text-lg text-gray-300 leading-relaxed flex-grow">
                 <ScrambledText
-                  className="font-medium"
+                  className="font-medium cursor-grab"
                   radius={40}
                   duration={1.5}
                   speed={0.15}
-                  scrambleChars=".:"
+                  scrambleChars="__"
                 >
                   {aboutData.bio}
                 </ScrambledText>

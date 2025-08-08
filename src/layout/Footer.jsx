@@ -1,6 +1,6 @@
 import React from 'react'
 import personalData from '../utils/personalData';
-import { FaArrowUp } from 'react-icons/fa';
+import { FaArrowUp, FaGithub, FaFacebook, FaInstagram, FaTelegram, FaTwitter } from 'react-icons/fa';
 import ShinyText from '../ui/ShinyText';
 import ScrambledText from '../ui/ScrambleText';
 function Footer() {
@@ -26,10 +26,17 @@ function Footer() {
 
         <div className='flex flex-col items-center justify-center gap-4 py-4  backdrop-blur-md border-t border-gray-700/50 px-15 text-center'>
             <div>
-            <ScrambledText radius={100} duration={1.2} speed={0.5} scrambleChars=".:" className="text-white/70" style={{ cursor: "pointer" }}>CopyRight &copy; {new Date().getFullYear()} {name}. All rights reserved.</ScrambledText>
+            <ScrambledText radius={100} duration={6} speed={1.9} scrambleChars="\/" className="text-white/70" style={{ cursor: "pointer" }}>CopyRight &copy; {new Date().getFullYear()} {name}. All rights reserved.</ScrambledText>
         </div>
-        <div>
+        <div className=''>
             <ScrambledText radius={100} duration={1.2} speed={0.5} scrambleChars=".:" className="text-white/70" style={{ cursor: "pointer" }}>Developed by {name}</ScrambledText>
+            <div className='flex flex-wrap justify-center mt-2 items-center gap-2'>
+            <a href={github} target="_blank" rel="noopener noreferrer"><FaGithub className="text-white/70" style={{ cursor: "pointer" }} /></a>
+            <a href={facebook} target="_blank" rel="noopener noreferrer"><FaFacebook className="text-white/70" style={{ cursor: "pointer" }} /></a>
+            <a href={instagram} target="_blank" rel="noopener noreferrer"><FaInstagram className="text-white/70" style={{ cursor: "pointer" }} /></a>
+            <a href={telegram} target="_blank" rel="noopener noreferrer"><FaTelegram className="text-white/70" style={{ cursor: "pointer" }} /></a>
+            <a href={twitter} target="_blank" rel="noopener noreferrer"><FaTwitter className="text-white/70" style={{ cursor: "pointer" }} /></a>
+            </div>
         </div>
         
     </div>
