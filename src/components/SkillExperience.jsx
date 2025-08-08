@@ -84,7 +84,7 @@ const SkillExperience = () => {
 
                 <div className="w-full bg-gray-700/30 rounded-full h-2.5 mb-2 overflow-hidden">
                   <div
-                    className="h-full rounded-full bg-gray-600 transition-all duration-1000 ease-out"
+                    className="h-full rounded-full bg-gradient-to-r from-black/50 to-white/50 transition-all duration-1000 ease-out"
                     style={{
                       width: `${skill.experience}%`,
                       transitionDelay: `${index * 50}ms`,
