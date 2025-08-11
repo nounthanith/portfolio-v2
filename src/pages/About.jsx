@@ -6,7 +6,7 @@ import SpotlightCard from "../ui/SpotlightCard";
 import { FaCode, FaStar } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import SkillExperience from "../components/SkillExperience";
-import MyCart from "../components/myCart";
+import MyCart from "../components/MyCart";
 
 function About() {
   return (
