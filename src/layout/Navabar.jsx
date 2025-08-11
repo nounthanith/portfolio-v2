@@ -14,6 +14,7 @@ function Navbar() {
   const navItems = [
     { name: "Home", path: "#hero", isInternal: true },
     { name: "About", path: "#about", isInternal: true },
+    { name: "Skills", path: "#skillExperience", isInternal: true },
     { name: "Education", path: "#education", isInternal: true },
     { name: "Blog", path: "#blog", isInternal: true },
     { name: "Contact", path: "#contact", isInternal: true },

@@ -5,8 +5,8 @@ import ScrambledText from "../ui/ScrambleText";
 import SpotlightCard from "../ui/SpotlightCard";
 import { FaCode, FaStar } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
-import Education from "./Education";
 import SkillExperience from "../components/SkillExperience";
+import MyCart from "../components/myCart";
 
 function About() {
   return (
@@ -174,6 +174,7 @@ function About() {
           </SpotlightCard>
         </div>
       </div>
+      <MyCart />
       <SkillExperience />   
     </section>
   );
