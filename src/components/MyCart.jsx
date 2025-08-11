@@ -29,9 +29,9 @@ function MyCart() {
                 </span>
                 {myCart.address}
               </p>
-              <p className="text-[9px] text-gray-400 truncate flex items-center gap-1">
+              {/* <p className="text-[9px] text-gray-400 truncate flex items-center gap-1">
                 @ {myCart.role}
-              </p>
+              </p> */}
             </div>
           </div>
 
