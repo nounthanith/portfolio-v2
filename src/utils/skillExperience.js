@@ -34,21 +34,21 @@ const skillExperience = [
         experience: 70,
         category: "database"
     },
-    {
-        name: "SQL",
-        experience: 75,
-        category: "database"
-    },
+    // {
+    //     name: "SQL",
+    //     experience: 75,
+    //     category: "database"
+    // },
     {
         name: "Git",
         experience: 80,
         category: "tools"
     },
-    {
-        name: "Docker",
-        experience: 65,
-        category: "devops"
-    },
+    // {
+    //     name: "Docker",
+    //     experience: 65,
+    //     category: "devops"
+    // },
     {
         name: "Dart",
         experience: 60,
@@ -71,12 +71,12 @@ const skillExperience = [
     },
     {
         name: "Java",
-        experience: 80,
+        experience: 60,
         category: "backend"
     },
     {
         name: "C++",
-        experience: 80,
+        experience: 60,
         category: "backend"
     },
     {
@@ -84,11 +84,11 @@ const skillExperience = [
         experience: 80,
         category: "tools"
     },
-    {
-        name: ".Net",
-        experience: 80,
-        category: "backend"
-    },
+    // {
+    //     name: ".Net",
+    //     experience: 80,
+    //     category: "backend"
+    // },
     {
         name: "Laravel",
         experience: 80,
@@ -99,16 +99,16 @@ const skillExperience = [
         experience: 80,
         category: "tools"
     },
-    {
-        name: "TypeScript",
-        experience: 80,
-        category: "frontend"
-    },
-    {
-        name: "React Native",
-        experience: 75,
-        category: "frontend"
-    },
+    // {
+    //     name: "TypeScript",
+    //     experience: 80,
+    //     category: "frontend"
+    // },
+    // {
+    //     name: "React Native",
+    //     experience: 75,
+    //     category: "frontend"
+    // },
 ];
 
 // Get all unique categories
