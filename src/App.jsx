@@ -7,6 +7,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Footer from "./layout/Footer";
 import Education from "./pages/Education";
+import Page404 from "./pages/Page404";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             </>
           }
         />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   );
