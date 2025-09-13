@@ -150,7 +150,7 @@ function Hero() {
               <img
                 src={avatar}
                 alt={name}
-                className="w-64 h-64 rounded-full object-cover border-4 border-yellow-400/30 shadow-xl transform group-hover:scale-105 transition-all duration-500"
+                className="w-64 h-64 rounded-full object-cover border-4 border-[var(--accent-color)]/30 shadow-xl transform group-hover:scale-105 transition-all duration-500"
               />
 
               <CircularText

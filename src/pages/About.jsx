@@ -104,7 +104,7 @@ function About() {
                               </span>
 
                               {/* Icon container */}
-                              <div className="z-10 relative p-2.5 rounded-xl bg-gray-800/60 hover:bg-gradient-to-br from-purple-500/10 to-indigo-500/10 transition-all duration-300 border border-gray-700/60 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                              <div className="z-10 relative p-2.5 rounded-xl bg-[var(--card-background)] hover:bg-gradient-to-br from-[var(--secondary-color)]/10 to-[var(--primary-color)]/10 transition-all duration-300 border border-[var(--border-color)] hover:border-[var(--secondary-color)]/30 hover:shadow-lg hover:shadow-[var(--secondary-color)]/10">
                                 <img
                                   className="w-auto h-8 transition-transform duration-300 group-hover/tool:scale-110"
                                   src={skill.image}
@@ -146,7 +146,7 @@ function About() {
                               </span>
 
                               {/* Icon container */}
-                              <div className="z-10 relative p-2.5 rounded-xl bg-gray-800/60 hover:bg-gradient-to-br from-purple-500/10 to-indigo-500/10 transition-all duration-300 border border-gray-700/60 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                              <div className="z-10 relative p-2.5 rounded-xl bg-[var(--card-background)] hover:bg-gradient-to-br from-[var(--secondary-color)]/10 to-[var(--primary-color)]/10 transition-all duration-300 border border-[var(--border-color)] hover:border-[var(--secondary-color)]/30 hover:shadow-lg hover:shadow-[var(--secondary-color)]/10">
                                 <img
                                   className="w-8 h-8 transition-transform duration-300 group-hover/tool:scale-110"
                                   src={tool.image}
@@ -164,10 +164,10 @@ function About() {
                   </div>
 
                   {/* Decorative corner borders */}
-                  <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-indigo-400/40 rounded-tl-lg opacity-0 group-hover:opacity-100 transition duration-500" />
-                  <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-purple-400/40 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-500" />
-                  <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-purple-400/40 rounded-bl-lg opacity-0 group-hover:opacity-100 transition duration-500 delay-100" />
-                  <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-indigo-400/40 rounded-br-lg opacity-0 group-hover:opacity-100 transition duration-500 delay-100" />
+                  <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[var(--primary-color)]/40 rounded-tl-lg opacity-0 group-hover:opacity-100 transition duration-500" />
+                  <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[var(--secondary-color)]/40 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-500" />
+                  <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-[var(--secondary-color)]/40 rounded-bl-lg opacity-0 group-hover:opacity-100 transition duration-500 delay-100" />
+                  <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-[var(--primary-color)]/40 rounded-br-lg opacity-0 group-hover:opacity-100 transition duration-500 delay-100" />
                 </div>
               </div>
             </div>

@@ -101,7 +101,7 @@ function Education() {
                               <span className="text-indigo-400 mr-2 mt-1">
                                 ▹
                               </span>
-                              <span className="text-gray-300 text-sm">
+                              <span className="text-[var(--text-color)] text-sm">
                                 {detail}
                               </span>
                             </li>
@@ -128,3 +128,4 @@ function Education() {
 }
 
 export default Education;
+

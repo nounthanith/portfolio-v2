@@ -114,7 +114,7 @@ const SkillExperience = () => {
                 <div className="flex items-center justify-between mt-3 text-xs text-gray-400 w-full">
                   <span>Beginner</span>
                   <div className="flex-1 px-2">
-                    <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-600/50 to-transparent" />
+                    <div className="h-px w-full bg-gradient-to-r from-transparent via-[var(--border-color)]/50 to-transparent" />
                   </div>
                   <span>Expert</span>
                 </div>
@@ -141,5 +141,7 @@ const SkillExperience = () => {
     </section>
   );
 };
+
+
 
 export default SkillExperience;

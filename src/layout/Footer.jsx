@@ -29,7 +29,7 @@ function Footer() {
             <ScrambledText radius={100} duration={6} speed={1.9} scrambleChars="\/" className="text-white/70" style={{ cursor: "pointer" }}>CopyRight &copy; {new Date().getFullYear()} {name}. All rights reserved.</ScrambledText>
         </div>
         <div className=''>
-            <ScrambledText radius={100} duration={1.2} speed={0.5} scrambleChars=".:" className="text-white/70" style={{ cursor: "pointer" }}>Developed by {name}</ScrambledText>
+            <ScrambledText radius={100} duration={1.2} speed={0.5} scrambleChars=".:" className="text-[var(--text-color)]" style={{ cursor: "pointer" }}>Developed by {name}</ScrambledText>
             <div className='flex flex-wrap justify-center mt-2 items-center gap-2'>
             <a href={github} target="_blank" rel="noopener noreferrer"><FaGithub className="text-white/70" style={{ cursor: "pointer" }} /></a>
             <a href={facebook} target="_blank" rel="noopener noreferrer"><FaFacebook className="text-white/70" style={{ cursor: "pointer" }} /></a>

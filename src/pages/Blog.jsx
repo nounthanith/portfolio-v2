@@ -91,7 +91,7 @@ function Blog() {
         <div className="text-center mt-10">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="border border-gray-600 px-4 py-2 rounded-md hover:opacity-80"
+            className="border border-[var(--border-color)] px-4 py-2 rounded-md hover:opacity-80"
           >
             <ShinyText
               text={showAll ? "Show Less" : "Show More"}

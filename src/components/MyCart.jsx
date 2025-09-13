@@ -17,13 +17,13 @@ function MyCart() {
         <div className="rounded-lg shadow p-2 border border-gray-200 mx-2 w-[250px] hover:shadow-md transition-shadow duration-300">
           <div className="flex items-center gap-2">
             <img
-              className="w-10 h-10 object-cover rounded-full border border-gray-200"
+              className="w-10 h-10 object-cover rounded-full border border-[var(--border-color)]"
               src={myCart.image}
               alt={myCart.name}
             />
             <div>
               <ShinyText text={myCart.name} disabled={false} speed={2} />
-              <p className="text-[10px] text-gray-400 truncate flex items-center gap-1">
+              <p className="text-[10px] text-[var(--text-color)] truncate flex items-center gap-1">
                 <span>
                   <FaLocationArrow />
                 </span>
@@ -53,3 +53,4 @@ function MyCart() {
 }
 
 export default MyCart;
+;

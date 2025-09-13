@@ -35,7 +35,7 @@ function Page404() {
         <div className="pt-6">
           <Link 
             to="/" 
-            className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-white transition-all duration-300 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 hover:scale-105 transform-gpu"
+            className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-[var(--text-color)] transition-all duration-300 rounded-full bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] hover:from-[var(--secondary-color)] hover:to-[var(--primary-color)] hover:scale-105 transform-gpu"
           >
             <span className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
             <span className="relative flex items-center space-x-2">

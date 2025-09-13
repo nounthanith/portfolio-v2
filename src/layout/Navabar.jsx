@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ShinyText from "../ui/ShinyText";
 import ScrambledText from "../ui/ScrambleText";
+import ThemeToggle from "../components/ThemeToggle";
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -69,14 +70,14 @@ function Navbar() {
                 <button
                   key={item.name}
                   onClick={() => handleInternalLink(item.path)}
-                  className="px-3 py-2 text-sm font-medium hover:text-indigo-300 transition-colors duration-300"
+                  className="px-3 py-2 text-sm font-medium hover:text-[var(--primary-color)] transition-colors duration-300"
                 >
                  <ScrambledText
                  radius={100}
                  duration={1.2}
                  speed={0.5}
                  scrambleChars=".:"
-                 className="text-xl text-white/70 hover:text-indigo-300 transition-colors duration-300 hover:underline cursor-grab"
+                 className="text-xl text-white/70 hover:text-[var(--primary-color)] transition-colors duration-300 hover:underline cursor-grab"
                  >
                  {item.name}
                  </ScrambledText>
@@ -85,7 +86,7 @@ function Navbar() {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="px-3 py-2 text-sm font-medium hover:text-indigo-300 transition-colors duration-300"
+                  className="px-3 py-2 text-sm font-medium hover:text-[var(--primary-color)] transition-colors duration-300"
                 >
                   <ShinyText
                     text={item.name}
@@ -96,6 +97,7 @@ function Navbar() {
                 </Link>
               )
             )}
+            <ThemeToggle />
           </div>
 
           {/* Mobile menu toggle */}
@@ -158,7 +160,7 @@ function Navbar() {
               <Link
                 key={item.name}
                 to={item.path}
-                className="block px-3 py-2 text-base font-medium hover:text-indigo-300 transition-colors duration-300"
+                className="block px-3 py-2 text-base font-medium hover:text-[var(--primary-color)] transition-colors duration-300"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <ShinyText text={item.name} disabled={false} speed={1.5} />

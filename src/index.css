@@ -30,3 +30,32 @@
   animation: star-movement-top linear infinite alternate;
 }
 
+:root {
+  --primary-color: #6366f1;
+  --secondary-color: #a855f7;
+  --accent-color: #ec4899;
+
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+  --card-background: #f9fafb;
+  --border-color: #e5e7eb;
+}
+
+.dark {
+  --primary-color: #818cf8;
+  --secondary-color: #c084fc;
+  --accent-color: #f472b6;
+
+  --background-color: #111827;
+  --text-color: #f9fafb;
+  --card-background: #1f2937;
+  --border-color: #374151;
+}
+
+/* body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+} */
+
+

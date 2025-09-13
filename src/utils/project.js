@@ -5,6 +5,7 @@ import nubbAssignment from "./../../public/projects/nubbAssigment.png";
 import calculator from "./../../public/projects/calculator.png";
 import incomeTracker from "./../../public/projects/incom-traker.png";
 import bookPdf from "./../../public/projects/book-pdf.png";
+import FullStackEcom from "./../../public/projects/FullStackEcom.png";
 const project = [
     {
       id:1,
@@ -68,7 +69,16 @@ const project = [
       link:"*",
       github:"https://github.com/nounthanith/e-book-web",
       technologies:["Node.js","MongoDB", "React", "Tailwind CSS", "javascript",]  
-    },    
+    },   
+    {
+      id:8,
+      name:"Full Stack Ecommerce Website",
+      description:"Sample Ecommerce Website with MERN Stack",
+      image:FullStackEcom,
+      link:"https://localbrand-frontend.vercel.app/",
+      github:"*",
+      technologies:["Node.js","MongoDB", "React", "Tailwind CSS", "javascript",]  
+    },  
 ]   
 
 export default project;

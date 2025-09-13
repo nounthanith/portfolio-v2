@@ -14,7 +14,7 @@ const SpotlightCard = ({ children, className = '' }) => {
       <div className="relative z-10">
         {children}
       </div>
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[var(--accent-color)]/5 via-transparent to-[var(--secondary-color)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
     </div>
   );
 };
